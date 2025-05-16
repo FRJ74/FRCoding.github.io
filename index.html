@@ -2,16 +2,30 @@
 <html lang="en">
 
 <head>
+  <!-- Set character encoding and viewport for proper rendering -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO meta description -->
   <meta name="description" content="FRCoding - Learning to code from scratch">
+  
+  <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+  
+  <!-- Google Fonts: Roboto family for typography -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:ital@1&family=Roboto+Slab&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome for icons -->
   <script src="https://kit.fontawesome.com/faf3c54cfd.js" crossorigin="anonymous"></script>
+  
+  <!-- Custom styles -->
   <link rel="stylesheet" href="style.css">
+  
+  <!-- Page title -->
   <title>FRCoding</title>
 </head>
 <body>
+  <!-- Mobile slide-out navigation menu -->
   <aside id="slideout-menu">
     <nav aria-label="Mobile navigation">
       <ul>
@@ -29,7 +43,9 @@
     </nav>
   </aside>
 
+  <!-- Main header section with navigation and banner -->
   <header>
+    <!-- Main navigation bar -->
     <nav class="main-nav" aria-label="Main navigation">
       <div id="logo-img">
         <a href="#">
@@ -52,6 +68,7 @@
       </ul>
     </nav>
 
+    <!-- Search box overlay -->
     <div id="searchbox" aria-hidden="true">
       <form role="search">
         <label for="main-search" class="visually-hidden">Search</label>
@@ -59,17 +76,21 @@
       </form>
     </div>
 
+    <!-- Site banner with title and tagline -->
     <div id="banner">
       <h1>&lt;FRCoding/&gt;</h1>
       <p class="tagline">Learning to code from scratch</p>
     </div>
   </header>
 
+  <!-- Main content area -->
   <main>
+    <!-- Blog posts section -->
     <section class="blogs" aria-labelledby="blogs-heading">
       <h2 id="blogs-heading" class="section-heading">All Blogs</h2>
 
       <div class="card-grid">
+        <!-- First blog post card -->
         <article class="card">
           <div class="card-image">
             <a href="#">
@@ -86,6 +107,7 @@
           </div>
         </article>
 
+        <!-- Second blog post card -->
         <article class="card">
           <div class="card-image">
             <a href="#">
@@ -105,10 +127,12 @@
       </div>
     </section>
 
+    <!-- Projects section -->
     <section class="projects" aria-labelledby="projects-heading">
       <h2 id="projects-heading" class="section-heading">All Projects</h2>
 
       <div class="card-grid">
+        <!-- First project card -->
         <article class="card">
           <div class="card-image">
             <a href="#">
@@ -126,6 +150,7 @@
           </div>
         </article>
 
+        <!-- Second project card -->
         <article class="card">
           <div class="card-image">
             <a href="#">
@@ -145,6 +170,7 @@
       </div>
     </section>
 
+    <!-- Source code section with GitHub link -->
     <section class="source-code" aria-labelledby="source-heading">
       <h2 id="source-heading" class="section-heading">Source Code</h2>
       <div id="section-source">
@@ -157,7 +183,9 @@
     </section>
   </main>
 
+  <!-- Footer with quick links and social media -->
   <footer>
+    <!-- Quick navigation links -->
     <div id="left-footer">
       <h2>Quick Links</h2>
       <nav aria-label="Footer navigation">
@@ -172,6 +200,7 @@
       </nav>
     </div>
 
+    <!-- Social media links and copyright -->
     <div id="right-footer">
       <h2>Follow us on</h2>
       <div id="social-media-footer">
@@ -197,6 +226,7 @@
     </div>
   </footer>
 
+  <!-- JavaScript for interactive features -->
   <script src="js/main.js"></script>
 </body>
 </html>
