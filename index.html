@@ -6,23 +6,72 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <!-- SEO meta description -->
-  <meta name="description" content="FRCoding - Learning to code from scratch">
+  <!-- Primary Meta Tags -->
+  <title>Nahuas Arts & Crafts | Authentic Mexican Artisan Crafts & Textiles</title>
+  <meta name="title" content="Nahuas Arts & Crafts | Authentic Mexican Artisan Crafts & Textiles">
+  <meta name="description" content="Discover authentic Nahuas-Mexican arts and crafts - Handcrafted textiles, pottery, and jewelry made with traditional techniques. Visit our artisan market in Downtown Plaza Central.">
+  <meta name="keywords" content="Nahuas crafts, Mexican artisan, handmade pottery, traditional textiles, Mexican jewelry, indigenous art, artisan market">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nahuasarts.com/">
+  <meta property="og:title" content="Nahuas Arts & Crafts | Authentic Mexican Artisan Crafts">
+  <meta property="og:description" content="Discover authentic Nahuas-Mexican arts and crafts - Handcrafted textiles, pottery, and jewelry made with traditional techniques.">
+  <meta property="og:image" content="https://nahuasarts.com/img/hero-bg.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://nahuasarts.com/">
+  <meta property="twitter:title" content="Nahuas Arts & Crafts | Authentic Mexican Artisan Crafts">
+  <meta property="twitter:description" content="Discover authentic Nahuas-Mexican arts and crafts - Handcrafted textiles, pottery, and jewelry made with traditional techniques.">
+  <meta property="twitter:image" content="https://nahuasarts.com/img/hero-bg.jpg">
   
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
   
-  <!-- Google Fonts: Roboto family for typography -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:ital@1&family=Roboto+Slab&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Prata&family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   
-  <!-- Font Awesome for icons -->
-  <script src="https://kit.fontawesome.com/faf3c54cfd.js" crossorigin="anonymous"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/1234567890.js" crossorigin="anonymous" defer></script>
   
-  <!-- Custom styles -->
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css">
-  
-  <!-- Page title -->
-  <title>FRCoding</title>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Store",
+      "name": "Nahuas Arts & Crafts",
+      "description": "Authentic Nahuas-Mexican arts and crafts store featuring handcrafted textiles, pottery, and jewelry",
+      "image": "https://nahuasarts.com/img/hero-bg.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Plaza Central",
+        "addressLocality": "Downtown Area",
+        "addressCountry": "MX"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "YOUR_LATITUDE",
+        "longitude": "YOUR_LONGITUDE"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday", "Sunday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "paymentAccepted": ["Cash", "Credit Card"],
+      "priceRange": "$$"
+    }
+  </script>
 </head>
 <body>
   <!-- Mobile slide-out navigation menu -->
@@ -44,26 +93,25 @@
   </aside>
 
   <!-- Main header section with navigation and banner -->
-  <header>
+  <header class="main-header">
     <!-- Main navigation bar -->
     <nav class="main-nav" aria-label="Main navigation">
-      <div id="logo-img">
-        <a href="#">
-          <img src="img/logo.jpg" alt="FR Coding Logo">
+      <div class="logo">
+        <a href="/" aria-label="Home">
+          <img src="img/logo.png" alt="Nahuas Arts & Crafts - Traditional Mexican Artisan Crafts" width="200" height="50">
         </a>
       </div>
-      <button id="menu-icon" aria-label="Toggle mobile menu">
-        <i class="fas fa-bars" aria-hidden="true"></i>
+      <button id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="hamburger"></span>
       </button>
-      <ul>
-        <li><a class="active" href="#" aria-current="page">Home</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">About</a></li>
-        <li>
-          <button id="search-icon" aria-label="Toggle search">
-            <i class="fas fa-search" aria-hidden="true"></i>
-          </button>
+      <ul class="nav-links">
+        <li><a href="#about" class="active">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#artisan">Artisan</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="language-switch">
+          <a href="/en" data-lang="en" aria-label="Switch to English">EN</a> / 
+          <a href="/es" data-lang="es" aria-label="Cambiar a Español">ES</a>
         </li>
       </ul>
     </nav>
@@ -77,9 +125,10 @@
     </div>
 
     <!-- Site banner with title and tagline -->
-    <div id="banner">
-      <h1>&lt;FRCoding/&gt;</h1>
-      <p class="tagline">Learning to code from scratch</p>
+    <div class="hero">
+      <h1>Authentic Nahuas-Mexican Crafts</h1>
+      <p class="tagline">Handcrafted with tradition, made with love</p>
+      <a href="#products" class="cta-button">Explore Our Crafts</a>
     </div>
   </header>
 
@@ -181,52 +230,91 @@
         <a href="#" class="btn-Readmore">GitHub Profile</a>
       </div>
     </section>
+
+    <section id="products" class="products">
+      <h2>Our Handcrafted Collection</h2>
+      <div class="product-grid">
+        <article class="product-card">
+          <img src="img/textiles.jpg" alt="Colorful hand-woven Nahuas textiles featuring traditional patterns" width="400" height="300">
+          <h3>Traditional Textiles</h3>
+          <p>Hand-woven using ancestral techniques and natural materials, our textiles preserve centuries of Nahuas craftsmanship.</p>
+        </article>
+        <article class="product-card">
+          <img src="img/pottery.jpg" alt="Handcrafted Mexican clay pottery with intricate designs" width="400" height="300">
+          <h3>Artisanal Pottery</h3>
+          <p>Each piece of pottery is carefully crafted using traditional methods passed down through generations of Mexican artisans.</p>
+        </article>
+        <article class="product-card">
+          <img src="img/jewelry.jpg" alt="Handmade Mexican silver and beaded jewelry" width="400" height="300">
+          <h3>Traditional Jewelry</h3>
+          <p>Beautiful accessories that blend ancient Nahuas symbolism with contemporary design, handcrafted by skilled artisans.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="artisan" class="artisan">
+      <div class="artisan-profile">
+        <img src="img/artisan.jpg" alt="Master artisan creating traditional Nahuas crafts in their workshop" width="600" height="400">
+        <div class="artisan-info">
+          <h2>Meet Your Artisan</h2>
+          <p>With over 20 years of experience preserving and evolving Nahuas crafting traditions, our master artisan creates unique pieces that tell the story of our rich cultural heritage. Each item is carefully handcrafted using traditional techniques and materials.</p>
+          <div class="craft-process">
+            <video controls poster="img/craft-preview.jpg" width="560" height="315">
+              <source src="video/crafting-process.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Visit Our Market Stall</h2>
+      <div class="contact-info">
+        <div class="location" itemscope itemtype="http://schema.org/Place">
+          <h3>Location</h3>
+          <p itemprop="name">Plaza Central Artisan Market</p>
+          <p itemprop="address">Downtown Area, Open Weekends</p>
+          <p>Hours: 9:00 AM - 6:00 PM</p>
+        </div>
+        <div class="payment">
+          <h3>Payment Methods</h3>
+          <p>We accept:</p>
+          <ul>
+            <li>Cash (MXN)</li>
+            <li>Credit/Debit Cards</li>
+          </ul>
+        </div>
+        <div class="social-media">
+          <h3>Follow Our Journey</h3>
+          <div class="social-links">
+            <a href="https://instagram.com/nahuas_crafts" target="_blank" rel="noopener" aria-label="Follow us on Instagram">
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="https://facebook.com/nahuas_crafts" target="_blank" rel="noopener" aria-label="Follow us on Facebook">
+              <i class="fab fa-facebook" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- Footer with quick links and social media -->
   <footer>
-    <!-- Quick navigation links -->
-    <div id="left-footer">
-      <h2>Quick Links</h2>
+    <div class="footer-content">
+      <p>&copy; 2024 Nahuas Arts & Crafts. All rights reserved.</p>
       <nav aria-label="Footer navigation">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Blogs</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="/privacy-policy">Privacy Policy</a></li>
+          <li><a href="/terms">Terms of Use</a></li>
+          <li><a href="/sitemap.xml">Sitemap</a></li>
         </ul>
       </nav>
-    </div>
-
-    <!-- Social media links and copyright -->
-    <div id="right-footer">
-      <h2>Follow us on</h2>
-      <div id="social-media-footer">
-        <ul>
-          <li>
-            <a href="#" aria-label="Facebook">
-              <i class="fab fa-facebook" aria-hidden="true"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#" aria-label="YouTube">
-              <i class="fab fa-youtube" aria-hidden="true"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#" aria-label="GitHub">
-              <i class="fab fa-github" aria-hidden="true"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <p>This website was developed by FRCoding</p>
     </div>
   </footer>
 
   <!-- JavaScript for interactive features -->
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
