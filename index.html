@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FRCoding - Learning to code from scratch">
   <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:ital@1&family=Roboto+Slab&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/faf3c54cfd.js" crossorigin="anonymous"></script>
@@ -11,202 +12,183 @@
   <title>FRCoding</title>
 </head>
 <body>
-  <div id="slideout-menu">
-    <ul>
-      <li>
-        <a href="#">Home</a>
-      </li>
-      <li>
-        <a href="#">Blog</a>
-      </li>
-      <li>
-        <a href="#">Projects</a>
-      </li>
-      <li>
-        <a href="#">About</a>
-      </li>
-      <li>
-        <input type="text" placeholder="Search Here">
-      </li>
-    </ul>
-  </div>
-  <nav>
-    <div id="logo-img">
-      <a href="#">
-        <img src="img/logo.jpg" alt="FR Coding Logo">
-      </a>
-    </div>
-    <div id="menu-icon">
-      <i class="fas fa-bars"></i>
-    </div>
-    <ul>
-      <li>
-        <a class="active" href="#">Home</a>
-      </li>
-      <li>
-        <a href="#">Blog</a>
-      </li>
-      <li><a href="#">Projects</a>
-      </li>
-      <li><a href="#">About</a>
-      </li>
-      <li>
-        <div id="search-icon">
-          <i class="fas fa-search"></i>
-        </div>
-      </li>
-    </ul>
-  </nav>
-  <div id="searchbox">
-    <input type="text" placeholder="Search Here">
-  </div>
-  <div id="banner">
-    <h1>&lt;FRCoding/&gt;</h1>
-    <h3>Learning to code from scratch</h3>
-  </div>
+  <aside id="slideout-menu">
+    <nav aria-label="Mobile navigation">
+      <ul>
+        <li><a href="#" aria-current="page">Home</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">About</a></li>
+        <li>
+          <form role="search">
+            <label for="mobile-search" class="visually-hidden">Search</label>
+            <input type="search" id="mobile-search" placeholder="Search Here">
+          </form>
+        </li>
+      </ul>
+    </nav>
+  </aside>
 
-  <a href="#">
-    <h2 class="section-heading">All Blogs</h2>
-  </a>
-
-  <section>
-    <div class="card">
-      <div class="card-image">
+  <header>
+    <nav class="main-nav" aria-label="Main navigation">
+      <div id="logo-img">
         <a href="#">
-          <img src="img/1.jpg" alt="Card Image">
+          <img src="img/logo.jpg" alt="FR Coding Logo">
         </a>
       </div>
-    </div>
-    <div class="card-description">
-      <a href="#">
-        <h3> Hello WebDev World!!!</h3>
-      </a>
-      <p>
-        This is the first website I've designed and built ever! The purpose is to showcase my skills and demonstrate I'm
-        constantly learning, improving, and thriving... not just surviving!!!
-      </p>
-      <a href="#" class="btn-Readmore">Read More</a>
-    </div>
-    <div class="card">
-      <div class="card-image">
-        <a href="#">
-          <img src="img/2.png" alt="Card Image">
-        </a>
-      </div>
+      <button id="menu-icon" aria-label="Toggle mobile menu">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+      </button>
+      <ul>
+        <li><a class="active" href="#" aria-current="page">Home</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">About</a></li>
+        <li>
+          <button id="search-icon" aria-label="Toggle search">
+            <i class="fas fa-search" aria-hidden="true"></i>
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="searchbox" aria-hidden="true">
+      <form role="search">
+        <label for="main-search" class="visually-hidden">Search</label>
+        <input type="search" id="main-search" placeholder="Search Here">
+      </form>
     </div>
 
-    <div class="card-description">
-      <a href="#">
-        <h3> The Blog Title Here</h3>
-      </a>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, esse! Et est, repellendus ab magni eveniet
-        sint neque excepturi doloribus eaque reprehenderit numquam, debitis soluta optio veniam nihil recusandae
-        blanditiis!
-      </p>
-      <a href="#" class="btn-Readmore">Read More</a>
+    <div id="banner">
+      <h1>&lt;FRCoding/&gt;</h1>
+      <p class="tagline">Learning to code from scratch</p>
     </div>
-  </section>
+  </header>
 
-  <h2 class="section-heading">All Projects</h2>
+  <main>
+    <section class="blogs" aria-labelledby="blogs-heading">
+      <h2 id="blogs-heading" class="section-heading">All Blogs</h2>
 
-  <section>
-    <div class="card">
-      <div class="card-image">
-        <a href="#">
-          <img src="img/3.png" alt="Card Image">
-        </a>
-      </div>
-    </div>
-    <div class="card-description">
-      <a href="#">
-        <h3> The Project Title Here</h3>
-      </a>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, esse! Et est, repellendus ab magni eveniet
-        sint neque excepturi doloribus eaque reprehenderit numquam, debitis soluta optio veniam nihil recusandae
-        blanditiis!
-      </p>
-      <a href="#" class="btn-Readmore">Read More</a>
-    </div>
-    <div class="card">
-      <div class="card-image">
-        <a href="#">
-          <img src="img/4.png" alt="Card Image">
-        </a>
-      </div>
-    </div>
+      <div class="card-grid">
+        <article class="card">
+          <div class="card-image">
+            <a href="#">
+              <img src="img/1.jpg" alt="First blog post featured image">
+            </a>
+          </div>
+          <div class="card-description">
+            <h3><a href="#">Hello WebDev World!!!</a></h3>
+            <p>
+              This is the first website I've designed and built ever! The purpose is to showcase my skills and demonstrate I'm
+              constantly learning, improving, and thriving... not just surviving!!!
+            </p>
+            <a href="#" class="btn-Readmore">Read More<span class="visually-hidden"> about Hello WebDev World</span></a>
+          </div>
+        </article>
 
-    <div class="card-description">
-      <a href="#">
-        <h3> The Blog Title Here</h3>
-      </a>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, esse! Et est, repellendus ab magni eveniet
-        sint neque excepturi doloribus eaque reprehenderit numquam, debitis soluta optio veniam nihil recusandae
-        blanditiis!
-      </p>
-      <a href="#" class="btn-Readmore">Read More</a>
-    </div>
-  </section>
-
-  <section>
-    <h2 class="section-heading">Source Code</h2>
-    <section id="section-source">
-      <div>
-        <section>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo deleniti dignissimos porro cum harum dolore,
-            corrupti rem magni dolorem pariatur eos. Nisi placeat voluptatum ducimus ex itaque iste, consectetur unde?
-          </p><br>
-          <a href="#" class="btn-Readmore">GitHub Profile</a>
-        </section>
+        <article class="card">
+          <div class="card-image">
+            <a href="#">
+              <img src="img/2.png" alt="Second blog post featured image">
+            </a>
+          </div>
+          <div class="card-description">
+            <h3><a href="#">The Blog Title Here</a></h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, esse! Et est, repellendus ab magni eveniet
+              sint neque excepturi doloribus eaque reprehenderit numquam, debitis soluta optio veniam nihil recusandae
+              blanditiis!
+            </p>
+            <a href="#" class="btn-Readmore">Read More<span class="visually-hidden"> about The Blog Title Here</span></a>
+          </div>
+        </article>
       </div>
     </section>
-  </section>
+
+    <section class="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading" class="section-heading">All Projects</h2>
+
+      <div class="card-grid">
+        <article class="card">
+          <div class="card-image">
+            <a href="#">
+              <img src="img/3.png" alt="First project featured image">
+            </a>
+          </div>
+          <div class="card-description">
+            <h3><a href="#">The Project Title Here</a></h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, esse! Et est, repellendus ab magni eveniet
+              sint neque excepturi doloribus eaque reprehenderit numquam, debitis soluta optio veniam nihil recusandae
+              blanditiis!
+            </p>
+            <a href="#" class="btn-Readmore">Read More<span class="visually-hidden"> about The Project Title Here</span></a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-image">
+            <a href="#">
+              <img src="img/4.png" alt="Second project featured image">
+            </a>
+          </div>
+          <div class="card-description">
+            <h3><a href="#">The Project Title Here</a></h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, esse! Et est, repellendus ab magni eveniet
+              sint neque excepturi doloribus eaque reprehenderit numquam, debitis soluta optio veniam nihil recusandae
+              blanditiis!
+            </p>
+            <a href="#" class="btn-Readmore">Read More<span class="visually-hidden"> about The Project Title Here</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="source-code" aria-labelledby="source-heading">
+      <h2 id="source-heading" class="section-heading">Source Code</h2>
+      <div id="section-source">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo deleniti dignissimos porro cum harum dolore,
+          corrupti rem magni dolorem pariatur eos. Nisi placeat voluptatum ducimus ex itaque iste, consectetur unde?
+        </p>
+        <a href="#" class="btn-Readmore">GitHub Profile</a>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <div id="left-footer">
-      <h3>Quick Links</h3>
-      <p>
-      <ul>
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">About</a>
-        </li>
-        <li>
-          <a href="#">Privacy Policy</a>
-        </li>
-        <li>
-          <a href="#">Blogs</a>
-        </li>
-        <li>
-          <a href="#">Projects</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-      </ul>
-      </p>
+      <h2>Quick Links</h2>
+      <nav aria-label="Footer navigation">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
     </div>
+
     <div id="right-footer">
-      <h3>Follow us on</h3>
+      <h2>Follow us on</h2>
       <div id="social-media-footer">
         <ul>
           <li>
-            <a href="#">
-              <i class="fab fa-facebook"></i>
+            <a href="#" aria-label="Facebook">
+              <i class="fab fa-facebook" aria-hidden="true"></i>
             </a>
           </li>
           <li>
-            <a href="#">
-              <i class="fab fa-youtube"></i>
+            <a href="#" aria-label="YouTube">
+              <i class="fab fa-youtube" aria-hidden="true"></i>
             </a>
           </li>
           <li>
-            <a href="#">
-              <i class="fab fa-github"></i>
+            <a href="#" aria-label="GitHub">
+              <i class="fab fa-github" aria-hidden="true"></i>
             </a>
           </li>
         </ul>
@@ -214,5 +196,7 @@
       <p>This website was developed by FRCoding</p>
     </div>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
